@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakafa - Wakaf Produktif & Jariyah Abadi</title>
+    <meta name="description"
+        content="Wakafa.co.id - Platform Wakaf Produktif (Ternak Domba & Kebun Sayur) di Pondok Pesantren YDSF Cangkringan, Sleman.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Wakafa<span class="dot">.</span>co.id</a>
+            <div class="nav-links">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#programs">Program</a>
+                <a href="#contact" class="btn-nav">Wakaf Sekarang</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/hero.png" alt="Pemandangan Pesantren YDSF Cangkringan">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="animate-up">Wakaf Produktif,<br> <span class="text-gradient">Jariyah Abadi</span></h1>
+            <p class="animate-up delay-1">Membangun ekonomi umat melalui peternakan domba dan pertanian sayur yang
+                berkelanjutan bersama Pondok Pesantren YDSF Cangkringan, Sleman.</p>
+            <div class="hero-btns animate-up delay-2">
+                <a href="#programs" class="btn btn-primary">Lihat Program</a>
+                <a href="#about" class="btn btn-outline">Tentang Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badgex">Tentang Kami</span>
+                <h2>Menebar Manfaat Melalui Wakaf</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3>Berbasis Pesantren</h3>
+                    <p>Dikelola langsung oleh profesional di lingkungan Pondok Pesantren YDSF Cangkringan, memastikan
+                        amanah terjaga.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Dampak Sosial</h3>
+                    <p>Hasil keuntungan wakaf digunakan untuk operasional pesantren dan beasiswa santri penghafal Quran.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Berkelanjutan</h3>
+                    <p>Model bisnis produktif yang dirancang untuk terus tumbuh dan memberikan manfaat jangka panjang
+                        tanpa henti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section programs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badgex">Program Unggulan</span>
+                <h2>Pilihan Wakaf Produktif</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="program-grid">
+                <!-- Program 1: Ternak Domba -->
+                <div class="program-card">
+                    <div class="card-image">
+                        <img src="assets/images/sheep.png" alt="Ternak Domba">
+                        <div class="status-badge active">Sudah Berjalan</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ternak Domba Modern</h3>
+                        <p>Penggemukan dan pembiakan domba dengan sistem kandang modern dan pakan berkualitas. Potensi
+                            pasar aqiqah dan qurban yang sangat besar.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Manajemen Profesional</li>
+                            <li><i class="fas fa-check-circle"></i> Kandang Higienis</li>
+                            <li><i class="fas fa-check-circle"></i> Pasar Terjamin</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary full-width"
+                            onclick="selectProgram('Ternak Domba')">Pilih Wakaf Ini</a>
+                    </div>
+                </div>
+
+                <!-- Program 2: Kebun Sayur -->
+                <div class="program-card">
+                    <div class="card-image">
+                        <img src="assets/images/vegetable.png" alt="Kebun Sayur">
+                        <div class="status-badge upcoming">Segera Hadir/Belum Berjalan</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kebun Sayur Organik</h3>
+                        <p>Pertanian sayur mayur dengan metode hidroponik dan organik di lahan pesantren. Menyediakan
+                            pangan sehat sekaligus edukasi agrisantri.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Sayuran Segar & Sehat</li>
+                            <li><i class="fas fa-check-circle"></i> Pemberdayaan Santri</li>
+                            <li><i class="fas fa-check-circle"></i> Ketahanan Pangan</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline full-width"
+                            onclick="selectProgram('Kebun Sayur')">Daftar Waiting List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location">
+        <div class="container">
+            <div class="location-banner">
+                <div class="loc-text">
+                    <h3>Lokasi Kami</h3>
+                    <p>Pondok Pesantren YDSF Cangkringan, Sleman, D.I. Yogyakarta</p>
+                    <a href="https://maps.google.com/?q=Pondok+Pesantren+YDSF+Cangkringan" target="_blank"
+                        class="link-arrow">Lihat di Google Maps <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Mulai Berwakaf Hari Ini</h2>
+                    <p>Silakan isi formulir di samping untuk konsultasi atau konfirmasi wakaf. Tim kami akan segera
+                        menghubungi Anda.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telepon / WhatsApp</h4>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@wakafa.co.id</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Cangkringan, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <form action="https://formspree.io/f/xnjjjdke" method="POST" enctype="multipart/form-data">
+                        <div class=" form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="alamat@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Peminatan Program</label>
+                            <select id="program" name="program">
+                                <option value="Umum">Konsultasi Umum</option>
+                                <option value="Ternak Domba">Ternak Domba</option>
+                                <option value="Kebun Sayur">Kebun Sayur</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan / Pertanyaan</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tulis pesan Anda disini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Wakafa<span class="dot">.</span>co.id</h3>
+                <p>Membangun peradaban melalui wakaf produktif.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#programs">Program</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wakafa.co.id - Pondok Pesantren YDSF Cangkringan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
